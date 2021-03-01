@@ -1,0 +1,30 @@
+<header class="header">
+    <nav class="nav">
+        <div class="nav-container">
+            <ul class="hide">
+                {% for menu in site.data.menu %}
+                <li class="transition">
+                    <a href="/{{menu.id}}" {% if current[1]== menu.id %} class="active" {% endif%}>
+                        {{ menu.label }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="dropdown" onclick="switchMenuVisible()">
+                <div class="icon">☰</div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+    function switchMenuVisible() {
+        if ($('ul').hasClass('hide')) {
+            $('ul').removeClass('hide');
+        } else {
+            $('ul').addClass('hide');
+        }
+    }
+</script>
+
+

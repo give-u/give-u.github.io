@@ -1,0 +1,175 @@
+.about {
+  margin: 80px;
+
+  @media (max-width: $break-small) {
+    margin: 0px;
+  }
+
+  .sub_title {
+    display: flex;
+    color : $primary;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px auto 30px auto;
+
+    @media (max-width: $break-small) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &_me {
+    flex-direction: column;
+
+    .content {
+      display: flex;
+
+      @media (max-width: $break-small) {
+        flex-direction: column;
+      }
+
+      .profile {
+        width: 150px;
+        border-radius: 50%;
+
+        @media (max-width: $break-small) {
+          margin: 20px auto;
+        }
+
+      }
+    }
+
+    @media (max-width: $break-small) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .description {
+      margin: auto 40px;
+    }
+
+  }
+
+  .experience {
+    font-weight: 300;
+    color: #333;
+    box-sizing: border-box;
+    * {
+      box-sizing: border-box;
+    }
+
+    @media (max-width: $break-small) {
+      flex-direction: column;
+      text-align: center;
+      padding : 20px
+    }
+
+    .timeline {
+      margin: 30px auto;
+      width:100%;
+      max-width:800px;
+      padding: 10px 0px 10px 0px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: calc(20% + 15px);
+        bottom: 0px;
+        width: 4px;
+        background: #ddd;
+      }
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    .entry {
+      clear: both;
+      text-align: left;
+      position: relative;
+
+      .period {
+        margin-bottom: .5em;
+        float: left;
+        width: 20%;
+        padding-right: 30px;
+        text-align: right;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border: 4px solid $primary;
+          background-color:#fff;
+          border-radius:100%;
+          top: 15%;
+          right: -25px;
+          z-index: 99;
+        }
+
+        .title {
+          margin: 0;
+          font-size: 15px;
+          color : $default-shade;
+        }
+      }
+
+      .content {
+        margin: 0 0 1em;
+        float: right;
+        width: 66%;
+
+        .company {
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        .title {
+          line-height: 1.4em;
+          color: $default-shade;
+          font-weight: 300;
+          &:first-child {
+            margin-top: 0;
+            font-weight: 400;
+          }
+        }
+        ul {
+          padding-left: 0;
+          list-style-type: none;
+          color: $default-shade;
+
+          li:before {
+            content: "–";
+            margin-right: .5em;
+          }
+        }
+      }
+    }
+  }
+
+  .skill {
+    @media (max-width: $break-small) {
+      flex-direction: column;
+      text-align: center;
+      padding : 20px
+    }
+    .set{
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 100px;
+      border: solid 1px #ddd;
+      font-size: 16px;
+      margin: 0 8px 14px 0;
+    }
+
+  }
+
+}
+
+
+

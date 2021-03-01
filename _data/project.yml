@@ -1,0 +1,47 @@
+#- category:
+#    - Web
+#    - Mobile
+#  title: 올리브영 온라인몰
+#  service: e-commerce Service
+#  period: 2021.02 - Present
+#  description:
+#    - 올리브영 자사 온라인몰 신규 프론트 개발 진행
+#  langauge :
+#    - JavaScript
+#    - JSP
+#    - Java
+#    - Spring,
+#    - HTML
+#    - CSS
+#  image : "/project/img/oliveyoung.png"
+
+- category:
+    - Web
+    - Mobile
+  title: 올리브영 온라인몰
+  service: e-commerce Service
+  period: 2020.11 - Present
+  description:
+    - 올리브영 자사 온라인몰 운영 및 신규 프론트 개발 진행
+  langauge:
+    - JavaScript
+    - JSP
+    - Java
+    - Spring,
+    - HTML
+    - CSS
+  image : "/project/img/oliveyoung.png"
+
+- category:
+    - Mobile
+  title: 인마이백
+  service: SNS & e-commerce Service
+  period: 2021.02 - Present
+  description:
+    - 화장품 커뮤니티/SNS/Commerce 기능 프론트 개발
+  langauge:
+    - React.js
+    - React-Native
+    - Typescript
+    - Redux
+  image : "/project/img/inmybag.png"

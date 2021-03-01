@@ -1,0 +1,8 @@
+- id:
+  label: Home
+
+- id: project
+  label: Project
+
+- id: blog
+  label: Blog
