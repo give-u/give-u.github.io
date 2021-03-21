@@ -21,6 +21,10 @@
       height: auto;
 
       @media (max-width: $break-medium) {
+        margin: auto 200px;
+      }
+
+      @media (max-width: 760px) {
         margin: auto 100px;
       }
 
@@ -47,9 +51,9 @@
           padding: 1px 5px;
           display: inline-block;
           vertical-align: top;
-          background: #efefef;
+          background: $primary;
           font-size: 13px;
-          color: #363636;
+          color: white;
           border-radius: 2px;
           -moz-border-radius: 2px;
           -webkit-border-radius: 2px;

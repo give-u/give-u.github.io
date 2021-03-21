@@ -1,29 +1,57 @@
-<div class="loading-animation">
-    <div class="about">
+<div class="home">
+    <div class="banner">
+        <h1 class="title">Hello!<br/> I'm Jurirang<br/>  and Junior Developer</h1>
+        <img class="icon" src="/meta/memoticon.png"/>
+    </div>
+    <div class="container">
         <div class="about_me">
             <span class="sub_title">About Me</span>
+            <span class="title">재기발랄 개발자</span>
             <div class="content">
-                <img class="profile" src="/meta/jurirang.jpg"/>
-                <span class="description">
-                    안녕하세요! 언제나 활발하고 재기발랄한 개발자 주리랑입니다!<br/>
-                    Front-end와 UI/UX에 관심이 많은 아직 햇병아리 개발자입니다 🐣
-                </span>
+                <p class="description">
+                    안녕하세요! 이제 2년차에 접어든 햇병아리 🐣 Front-end 개발자 주리랑입니다.<br/>
+                    2020년 React를 만나 Front-end의 재미에 푹 빠져버리게 되었습니다 :) 개발자 관점에서의 UI 컴포넌트를 개발하고 사용자 관점에서 UX를 고민하는 것을 좋아합니다!
+                    언제나 지치지 않고 궁금한 것이 있다면 질문과 공부를 통해 해소하며 어제보다 발전하고자 하는 개발자입니다!<br/>
+                    더 나은 서비스를 위해 기획자와 디자이너와의 협업과 팀원들과의 토론을 통해, 일이 아닌 개발의 즐거움을 얻습니다 !
+                </p>
+                <div class="profile">
+                    <img class="imag1" src="/meta/jurirang.jpg"/>
+                    <img class="imag2" src="/meta/jurirang2.JPG"/>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <span class="portfolio-section-sub-title">Awesome Works</span>
+            <span class="portfolio-section-title">PORTFOLIO</span>
+            <div class="portfolio-content">
+                {% assign portfolios = site.data.portfolio%}
+                {% for portfolio in portfolios %}
+                <article id="{{portfolio.id}}" class="portfolio-listing">
+                    <a class="portfolio-title" href="/project">{{portfolio.projectName}}</a>
+                    <div class="portfolio-image">
+                        <a href="/project">
+                            <img src="{{portfolio.image}}" alt="san francisco">
+                        </a>
+                    </div>
+                </article>
+                {% endfor %}
             </div>
         </div>
         <div class="experience">
             <span class="sub_title">Experience</span>
+            <span class="title">Work</span>
             <div class="content">
                 <div class="timeline">
                     {% assign experiences = site.data.experience%}
                     {% for experience in experiences %}
                     <div class="entry">
                         <div class="period">
-                            <p class="title">{{ experience.period }}</p>
+                            <p class="text">{{ experience.period }}</p>
                         </div>
                         <div class="content">
                             {% for content in experience.content %}
                             <span class="company">{{ content.company }}</span>
-                            <p class="title"> {{ content.title }}</p>
+                            <p class="work"> {{ content.title }}</p>
                             {% if content.description  != null %}
                             <ul>
                                 <li>{{ content.description }}</li>
@@ -37,7 +65,8 @@
             </div>
         </div>
         <div class="skill">
-            <span class="sub_title">Skill<br/></span>
+            <span class="sub_title">Tech</span>
+            <span class="title">Skill</span>
             <div class="content">
                 {% assign skills = site.data.skill %}
                 {% for skill in skills %}
