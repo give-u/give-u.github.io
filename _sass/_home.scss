@@ -130,7 +130,6 @@
             position: relative;
             z-index: 1;
             width: 150px;
-            background: red;
             top: -50px;
 
             @media (max-width: $break-small) {
@@ -145,7 +144,6 @@
             top: 20px;
             z-index: 2;
             width: 300px;
-            background: yellow;
 
             @media (max-width: $break-small) {
               margin: auto;
