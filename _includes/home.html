@@ -1,6 +1,6 @@
 <div class="home">
     <div class="banner">
-        <h1 class="title">Hello!<br/> I'm Jurirang<br/>  and Junior Developer</h1>
+        <h1 class="title">Hello!<br/> I'm Jurirang<br/>  and Developer</h1>
         <img class="icon" src="/meta/memoticon.png"/>
     </div>
     <div class="container">
@@ -24,7 +24,7 @@
             <span class="portfolio-section-sub-title">Awesome Works</span>
             <span class="portfolio-section-title">PORTFOLIO</span>
             <div class="portfolio-content">
-                {% assign portfolios = site.data.portfolio%}
+                {% assign portfolios = site.data.portfolio | sort: 'id' | reverse %}
                 {% for portfolio in portfolios %}
                 <article id="{{portfolio.id}}" class="portfolio-listing">
                     <a class="portfolio-title" href="/project">{{portfolio.projectName}}</a>

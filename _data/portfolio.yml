@@ -1,7 +1,13 @@
-- id : 1
-  projectName : Oliveyoung
-  image : "/project/img/oliveyoung.png"
 
-- id: 2
+
+- id: 1
   projectName: Inmybag
   image: "/project/img/inmybag.jpeg"
+
+- id: 2
+  projectName: 올리브영
+  image: "/project/img/oliveyoung.png"
+
+- id: 3
+  projectName: 올리브영 - 건강비밀 프로젝트
+  image: "/project/img/oliveyoung_vimeal.png"

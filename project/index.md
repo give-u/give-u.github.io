@@ -5,7 +5,7 @@ main: true
 ---
 
 <div class="project">
-    {% assign projects = site.data.project%}
+    {% assign projects = site.data.project | sort: 'id' | reverse %}
     {% for project in projects %}
     <div class="container">
         <img class="image" src="{{ project.image }}"/>
@@ -21,7 +21,9 @@ main: true
             <div class="service">{{project.service}}</div>
             <div class="period">{{project.period}}</div>
             <ul>
-                <li>- {{project.description}}</li>
+                {% for description in project.description %}
+                  <li>- {{description}}</li>
+                {% endfor %}
             </ul>
             <div class="language">
             {% for skill in project.langauge %}

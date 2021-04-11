@@ -188,12 +188,16 @@
 
       &-content {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
         justify-items: center;
         align-items: center;
 
-        @media (max-width: $break-medium) {
+        @media (max-width: $break-large + 100) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $break-small + 80) {
           grid-template-columns: repeat(1, 1fr);
         }
 
